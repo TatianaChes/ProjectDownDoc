@@ -1,0 +1,65 @@
+<UserControl x:Class="AvaloniaApplication2.Views.SecondPageView"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:AvaloniaApplication2.ViewModels"
+             d:DesignHeight="450"
+             d:DesignWidth="900" 
+             x:CompileBindings="True"
+             x:DataType="vm:SecondPageViewModel"
+             mc:Ignorable="d">
+	<Design.DataContext>
+		<vm:SecondPageViewModel />
+	</Design.DataContext>
+	<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" >
+		<TextBlock VerticalAlignment="Center"
+				  FontSize="16"
+				  FontWeight="SemiBold"
+				  Text="Введите учетных данные"
+				  TextAlignment="Center"
+				  Margin="0 0 0 30" />
+		<Grid>
+			<Grid.ColumnDefinitions >
+				<ColumnDefinition></ColumnDefinition>
+				<ColumnDefinition></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+			</Grid.RowDefinitions>
+			<Label Content="Логин:"
+				   Grid.Row="0" Grid.Column="0" 
+				   Margin="3" 
+				   VerticalAlignment="Center"/>
+			<TextBox VerticalAlignment="Center"
+                 FontSize="16"
+                 Text="{Binding MailAddress}"
+                 Watermark="Имя пользователя"
+				 Grid.Row="0" Grid.Column="1"
+				 Margin="3"
+				 Width="250"/>
+			<Label Content="Пароль:" 
+				   Grid.Row="1" 
+				   Grid.Column="0" 
+				   Margin="3" 
+				   VerticalAlignment="Center"/>
+			<TextBox VerticalAlignment="Center"
+                 FontSize="16"
+				 PasswordChar="*"
+                 Text="{Binding Password}"
+                 Watermark="Пароль"
+				 Grid.Column="1" Grid.Row="1"
+				 Margin="3"
+				 Width="250"/>
+			</Grid>
+		<TextBlock 
+				Text="{Binding messageUser}" 
+				HorizontalAlignment="Center" 
+				Foreground="{Binding MessageForeground}"
+				Margin="0 20 0 0"/>
+	</StackPanel>
+	
+	
+</UserControl>

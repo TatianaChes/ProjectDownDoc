@@ -1,0 +1,18 @@
+<UserControl x:Class="AvaloniaApplication2.Views.FourthPageView"
+             xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:AvaloniaApplication2.ViewModels"
+             d:DesignHeight="450"
+             d:DesignWidth="900" 
+             x:CompileBindings="True"
+             x:DataType="vm:FourthPageViewModel"
+             mc:Ignorable="d">
+	<Design.DataContext>
+		<vm:FourthPageViewModel/>
+	</Design.DataContext>
+
+	<StackPanel Orientation="Vertical" Margin="20" x:Name="stackPannel">
+	</StackPanel>
+</UserControl>

@@ -1,0 +1,51 @@
+<UserControl x:Class="AvaloniaApplication2.Views.FifthPageView"
+			 xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:vm="using:AvaloniaApplication2.ViewModels"
+             mc:Ignorable="d" 
+			 d:DesignWidth="800"
+			 d:DesignHeight="450" 
+			 x:CompileBindings="True"
+             x:DataType="vm:FifthPageViewModel"
+			 >
+	<Design.DataContext>
+		<vm:FifthPageViewModel/>
+	</Design.DataContext>
+	<StackPanel Orientation="Vertical" Margin ="0 20 0 0">
+		<Label Content ="Инвентаризация" HorizontalAlignment="Center" FontSize ="14" FontWeight ="Bold" Margin="0 0 0 60"/>
+	<Grid Height="250" HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Grid.RowDefinitions>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+			<ColumnDefinition Width="auto"></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 20 0" Text="ОНЛП:"></TextBlock>
+		<ListBox Grid.Column="1" Grid.Row="0" Width="360" Height="35" Name="listBox"></ListBox>
+		<Button Grid.Column="2" Grid.Row="0" Content="Обзор" Height="30" Width="100" HorizontalContentAlignment="Center" Margin="10 0 0 0" Click="Button_ClickOpen1"/>
+		<Button Grid.Column="3" Grid.Row="0" Content="Очистить" Height="30" Width="100" HorizontalContentAlignment="Center" Margin="10 0 0 0" Background="DarkGray" Click="Button_ClickClear1"/>
+
+		<TextBlock Grid.Column="0" Grid.Row="1"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 20 0" Text="1191:"></TextBlock>
+		<ListBox Grid.Column="1" Grid.Row="1"  Width="360" Height="35" Name="listBox1"></ListBox>
+		<Button Grid.Column="2" Grid.Row="1"  Content="Обзор" Height="30" Width="100" HorizontalContentAlignment="Center" Margin="10 0 0 0" Click="Button_ClickOpen2"/>
+		<Button Grid.Column="3" Grid.Row="1"  Content="Очистить" Height="30" Width="100" HorizontalContentAlignment="Center" Margin="10 0 0 0" Background="DarkGray" Click="Button_ClickClear2"/>
+
+		<TextBlock Grid.Column="0" Grid.Row="2"  HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 20 0" Text="Соц. значимые:"></TextBlock>
+		<ListBox Grid.Column="1" Grid.Row="2"  Width="360" Height="35" Name="listBox2"></ListBox>
+		<Button Grid.Column="2" Grid.Row="2"  Content="Обзор" Height="30" Width="100" HorizontalContentAlignment="Center" Margin="10 0 0 0" Click="Button_ClickOpen3"/>
+		<Button Grid.Column="3" Grid.Row="2"  Content="Очистить" Height="30" Width="100" HorizontalContentAlignment="Center" Margin="10 0 0 0" Background="DarkGray" Click="Button_ClickClear3"/>
+
+		<Button Grid.Row="3" Content="Загрузить" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="4" Height="30" Width="150" HorizontalContentAlignment="Center"
+				Margin="0 50 0 0" Click="Button_Click"/>
+	</Grid>
+	
+	</StackPanel>
+</UserControl>
