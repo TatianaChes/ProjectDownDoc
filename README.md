@@ -1,66 +1,66 @@
 # Начало работы
 1.  Работа приложения начинается с выполнения входа, в поля необходимо указать данные пользователя БД.
 
-![image](https://github.com/user-attachments/assets/297505cd-aee6-4d33-a625-b16506f6d899)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/1.png)
 
 2. В случае введения неверных данных появляется уведомление, в случае успеха активируется кнопка **«Войти»**.
 
-![image](https://github.com/user-attachments/assets/955a9b42-70fb-4e34-93a1-60aa9e5e174f)
-![image](https://github.com/user-attachments/assets/dcfb9da2-3341-4fe4-8f2c-023aafac1b12)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/2.png)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/3.png)
 
 3. Этап подгрузки файлов Инвентаризации. В случае если необходимо загрузить только недопоставки следует нажать кнопку **«Далее»**.
 В соответствии с наименованием полей необходимо выполнить загрузку файлов, в случае если был выбран неправильный файл нажать **«Очистить»** напротив поля, где он был добавлен. 
 Для данного окна предусмотрена подгрузка только 1 файла на 1 направление. Если файлы данных по какому-либо из направлений отсутствуют, то поле остается пустым. Для добавления файла необходимо нажать **«Обзор»** .
 
-![image](https://github.com/user-attachments/assets/51e3c962-1042-4474-aad8-f9d81d1c69bd)
-![image](https://github.com/user-attachments/assets/772da8c1-636a-4d85-8c42-0bcc1ff30dba)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/4.png)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/5.png)
 
 Если ни 1 файл не был подгружен, но была нажата кнопка **«Загрузить»**, пользователь получит ошибку.
 
-![image](https://github.com/user-attachments/assets/e12ec47b-6f83-4d34-9c2b-6afbbce4fc5b)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/6.png)
 
 При выборе двух одинаковых файлов также предусмотрено оповещение.
 
-![image](https://github.com/user-attachments/assets/5eb819f8-bd7e-435d-91f3-0d86ad1a80ec)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/7.png)
 
 Далее загруженный файл проходит проверку на предмет того, был ли он записал в базу данных ранее. В зависимости от этого пользователь получает сообщение с результатом.
 
-![image](https://github.com/user-attachments/assets/6dacb6ec-e2d4-49bb-a10e-5d7c04e6de10)
-![image](https://github.com/user-attachments/assets/3996c4be-61aa-49fe-9f76-00b754cf8f3f)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/8.png)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/9.png)
 
 Примечание: загрузка данных занимает некоторое время, пользователю необходимо дождаться сообщения об успешной загрузке.
 
 4. Загрузка Недопоставок. В поле указывается количество файлов подгрузки.
 Если не введено количество или не выбраны файлы, но нажата кнопка **«Прочитать»** появляется уведомление как на рисунке ниже.
 
-![image](https://github.com/user-attachments/assets/cf967b5e-06c8-4366-8acb-98899baa5ad4)
-![image](https://github.com/user-attachments/assets/e30f441e-2f06-49ae-b59e-9c246a15d75f)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/10.png)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/11.png)
 
 При вводе нужно убедится, что тип данных является числовым.
 
-![image](https://github.com/user-attachments/assets/bb9313af-6ed3-4862-8a3a-2559cea6d797)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/12.png)
 
 Файлы выбираются по кнопке **«Обзор»**, далее устанавливаются направление из выпадающего списка, в случае выбора ошибочного файла следует нажать кнопку **«Очистить»**.
 
 Если пользователь забыл выбрать направление, появляется предупреждение.
 
-![image](https://github.com/user-attachments/assets/6405c785-ec81-47c7-912a-47aae0ae7f50)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/13.png)
 
 Также пользователь не может подгрузить два одинаковых файла.
 
-![image](https://github.com/user-attachments/assets/8a6d923b-69bb-4976-8bbd-e1cd47883c21)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/14.png)
 
 После установки всех обязательных сведений файлы проходят валидацию.
 
-![image](https://github.com/user-attachments/assets/5909abe5-b0a4-415d-aa4f-929ee54f2332)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/15.png)
 
 В случае успеха активной становится кнопка **«Далее»**.
 
-![image](https://github.com/user-attachments/assets/1c6d9f6b-c02a-44eb-add8-21960040d882)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/16.png)
 
 Последним шагом является проверка загруженных сведений.
 
-![image](https://github.com/user-attachments/assets/df6fc44e-8f0e-43a3-89a1-389d8778bf78)
+![image](https://github.com/TatianaChes/ProjectDownDoc/blob/master/pictures/17.png)
 
  
 
